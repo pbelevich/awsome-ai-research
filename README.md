@@ -16,3 +16,8 @@ Mixture-of-Experts (MoE) models activate only a handful of specialised “expert
 
 ## Eval
 
+## Communication
+As models sprawl across dozens of GPUs, communication libraries are evolving just as fast as the networks they ride on. NVSHMEM pushes the envelope by giving each GPU a view of a partitioned global address space and letting kernels issue one-sided puts/gets directly on the NIC, eliminating CPU mediation and hiding latency; DeepSeek’s recent DeepEP work shows how this NVSHMEM path slashes MoE dispatch/combine overhead and sustains low-microsecond all-to-all latency on multi-rack clusters.
+
+UCCL keeps the familiar NCCL API but rewrites the transport layer to spray packets over hundreds of network paths, add receiver-driven congestion control, and support heterogeneous GPUs; the result is up to 2.5×–3.7× higher throughput than NCCL for AllReduce/AlltoAll on on-prem HGX boxes and AWS p4d instances, all without touching user code
+
