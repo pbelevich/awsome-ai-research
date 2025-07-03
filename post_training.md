@@ -5,6 +5,11 @@
   * https://github.com/mbzuai-oryx/Awesome-LLM-Post-training
 * [LARGE LANGUAGE MODELS POST-TRAINING: SURVEYING TECHNIQUES FROM ALIGNMENT TO REASONING](https://arxiv.org/pdf/2503.06072)
   * https://github.com/Mr-Tieguigui/LLM-Post-Training
+ 
+# Frameworks
+* https://github.com/huggingface/trl
+* https://github.com/volcengine/verl
+* https://github.com/OpenRLHF/OpenRLHF
 
 ## Reinforcement Pre-Training
 * [Reinforcement Pre-Training](https://arxiv.org/pdf/2506.08007)
