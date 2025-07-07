@@ -1,5 +1,8 @@
 # Compilers
 
+## Halide
+* https://halide-lang.org/
+
 ## Exo2
 * https://exo-lang.dev/
 * https://github.com/exo-lang/exo
