@@ -6,7 +6,6 @@
 set -x
 
 export MODEL_NAME=moonshotai/Kimi-K2-Instruct
-export MODEL_PATH=`python -c "from pathlib import Path; from huggingface_hub import hf_hub_download; print(Path(hf_hub_download('$MODEL_NAME', filename='config.json')).parent)"`
 
 export MASTER_IP=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
 export PORT=13579

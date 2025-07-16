@@ -6,12 +6,12 @@
 set -x
 
 export MODEL_NAME=moonshotai/Kimi-K2-Instruct
-export MODEL_PATH=`python -c "from pathlib import Path; from huggingface_hub import hf_hub_download; print(Path(hf_hub_download('$MODEL_NAME', filename='config.json')).parent)"`
 
 export MASTER_IP=$(scontrol show hostnames $SLURM_JOB_NODELIST | head -n 1)
 
 srun -l bash -c 'set -x; python -m sglang.launch_server \
-    --model-path $MODEL_PATH \
+    --host 0.0.0.0 \
+    --model-path $MODEL_NAME \
     --tp 16 \
     --dist-init-addr $MASTER_IP:50000 \
     --nnodes $SLURM_JOB_NUM_NODES \
