@@ -1,12 +1,17 @@
 # Kimi-K2
 
+## Resources
+* https://magazine.sebastianraschka.com/i/168650848/kimi
+
+## Deployment
+
 ```bash
 huggingface-cli download moonshotai/Kimi-K2-Instruct
 export MODEL_NAME=moonshotai/Kimi-K2-Instruct
 export MODEL_PATH=`python -c "from pathlib import Path; from huggingface_hub import hf_hub_download; print(Path(hf_hub_download('$MODEL_NAME', filename='config.json')).parent)"`
 ```
 
-## vLLM
+### vLLM
 
 vLLM 0.9.2 does not support Kimi-K2
 
@@ -34,7 +39,7 @@ Test vLLM server:
 TODO
 ```
 
-## SGLang
+### SGLang
 
 Install SGLang:
 ```bash
