@@ -15,6 +15,7 @@
 
 # Links
 * [François Chollet: How We Get to AGI](https://youtu.be/5QcCeSsNRks)
+* [[Full Workshop] Reinforcement Learning, Kernels, Reasoning, Quantization & Agents — Daniel Han](https://youtu.be/OkEGJ5G3foU)
 
 ## Reinforcement Pre-Training
 * [Reinforcement Pre-Training](https://arxiv.org/pdf/2506.08007)
