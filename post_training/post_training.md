@@ -1,5 +1,7 @@
 # Post-training
 
+![alt text](closed-vs-open-weights.jpeg)
+
 ## Papers
 * [LLM Post-Training: A Deep Dive into Reasoning Large Language Models](https://arxiv.org/pdf/2502.21321)
   * https://github.com/mbzuai-oryx/Awesome-LLM-Post-training
