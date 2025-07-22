@@ -1,5 +1,7 @@
 # Low Precision Training
 
+![Adoption of new numeric formats took 3-4 years in past cycles](adoption_of_new_numerical_formats.png)
+
 ## TorchAO: 
 * https://github.com/pytorch/ao
 * Quick Start Guide: https://docs.pytorch.org/ao/stable/quick_start.html
