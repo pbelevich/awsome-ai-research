@@ -1,8 +1,9 @@
 # Useful Resources
 
 ## Blogs
-* [PyTorch Blog](https://pytorch.org/blog/)
-* [NVIDIA Blog](https://developer.nvidia.com/blog/)
+* [PyTorch](https://pytorch.org/blog/)
+* [NVIDIA](https://developer.nvidia.com/blog/)
+* [EPOCH.AI](https://epoch.ai/blog)
 
 ## Twitter
 * [Stas Bekman](https://x.com/StasBekman)
