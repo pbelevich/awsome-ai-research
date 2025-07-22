@@ -1,6 +1,7 @@
 # Kimi-K2
 
 ## Resources
+* [Technical Report](https://github.com/MoonshotAI/Kimi-K2/blob/main/tech_report.pdf)
 * https://magazine.sebastianraschka.com/i/168650848/kimi
 
 ## Deployment
