@@ -1,5 +1,7 @@
 # AWSome AI Research
 
+![AWSome AI Research](Awsome-AI-Research.png)
+
 ## Long context window
 A Long Context Window is the expanded “working memory” of modern large-language models, now stretching from tens of thousands up to a million tokens—enough to fit entire books, codebases, or multi-hour transcripts in a single prompt. This leap matters because it changes how we build AI products: lawyers can review all deal documents in one shot, developers can refactor cross-repository code with full context, and support agents can reason over an entire customer history without losing track. Powered by efficient attention kernels like FlashAttention-3 and bandwidth-rich GPUs, long-context models slash the need for brittle chunking or retrieval glue code, cutting latency and hallucination risk while boosting accuracy. In short, bigger context isn’t just a spec bump—it’s the key that unlocks end-to-end reasoning over real-world scale data, making previously impossible workflows practical in 2025. [Ream more](lcw.md)
 
