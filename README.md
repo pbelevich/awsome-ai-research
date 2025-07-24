@@ -16,7 +16,7 @@ Low‑precision training is quickly becoming the default path to scale modern AI
 Mixture-of-Experts (MoE) models activate only a handful of specialised “experts” for each token, letting today’s giants pack trillion-scale capacity without paying trillion-scale FLOPs. That recipe powers DeepSeek V3’s 671 B-parameter transformer that lights up just 37 B per token, Meta’s first MoE-enabled Llama 4 lineup, and Alibaba’s Qwen3 series, which ships both dense and MoE variants for tasks from coding to chat. Expert Parallelism—the practice of spreading those experts across many GPUs and wiring them together with ultra-fast all-to-all links (e.g., NVSHMEM kernels that run up to 10 × faster than vanilla collectives)—is what turns the theory into a product: it keeps memory steady, inference latency low, and training bills sane even as models breach the trillion-parameter ceiling. In the post-DeepSeek age, MoE + Expert Parallelism has become the default scaling path, delivering frontier accuracy and domain versatility on hardware budgets that would have been unthinkable for dense models just two years ago. [Read more](moe.md)
 
 ## Eval
-[Read more](eval.md)
+[Read more](eval/README.md)
 
 ## Communication
 As models sprawl across dozens of GPUs, communication libraries are evolving just as fast as the networks they ride on. NVSHMEM pushes the envelope by giving each GPU a view of a partitioned global address space and letting kernels issue one-sided puts/gets directly on the NIC, eliminating CPU mediation and hiding latency; DeepSeek’s recent DeepEP work shows how this NVSHMEM path slashes MoE dispatch/combine overhead and sustains low-microsecond all-to-all latency on multi-rack clusters.[Read more](comm.md#nvshmem)
