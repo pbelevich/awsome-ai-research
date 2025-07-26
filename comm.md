@@ -14,3 +14,4 @@ TBD
 
 ## EFA
 * https://github.com/awsankur/awesome-networking
+* [Harnessing 3200 Gbps Network: A Journey with RDMA, EFA, and libfabric](https://le.qun.ch/en/blog/2024/12/25/libfabric-efa-0-intro/)
