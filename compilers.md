@@ -11,3 +11,9 @@
 ## Luminal
 * https://github.com/jafioti/luminal
 * [[GPU Mode] Luminal - Search-Based Deep Learning Compilers](https://youtu.be/2pTjf2i4wD8)
+
+## LLVM
+* [Kaleidoscope tutorial](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html)
+
+## MLIR
+* [MLIR Toy Tutorial](https://mlir.llvm.org/docs/Tutorials/Toy/)
