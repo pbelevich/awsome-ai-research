@@ -16,6 +16,7 @@ Low‑precision training is quickly becoming the default path to scale modern AI
 Mixture-of-Experts (MoE) models activate only a handful of specialised “experts” for each token, letting today’s giants pack trillion-scale capacity without paying trillion-scale FLOPs. That recipe powers DeepSeek V3’s 671 B-parameter transformer that lights up just 37 B per token, Meta’s first MoE-enabled Llama 4 lineup, and Alibaba’s Qwen3 series, which ships both dense and MoE variants for tasks from coding to chat. Expert Parallelism—the practice of spreading those experts across many GPUs and wiring them together with ultra-fast all-to-all links (e.g., NVSHMEM kernels that run up to 10 × faster than vanilla collectives)—is what turns the theory into a product: it keeps memory steady, inference latency low, and training bills sane even as models breach the trillion-parameter ceiling. In the post-DeepSeek age, MoE + Expert Parallelism has become the default scaling path, delivering frontier accuracy and domain versatility on hardware budgets that would have been unthinkable for dense models just two years ago. [Read more](moe.md)
 
 ## Eval
+A pre-requisite for training a strong LM is having a robust evaluation suite that can guide model development while tracking its utility in real-world applications [(Gao, 2024)]([url](https://arxiv.org/pdf/2410.02660)).
 [Read more](eval/README.md)
 
 ## Communication
